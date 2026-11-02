@@ -4,11 +4,11 @@
 
 ![License](https://img.shields.io/badge/License-CERN--OHL--P%20v2-blue.svg)
 
-![PCB 3D 渲染](gallery/PCB_3D_1.png)
+<img src="gallery/PCB_3D_1.png" width="320" alt="PCB 3D 渲染">
 
-![原理图](gallery/schematic_P1.png)
+<img src="gallery/schematic_P1.png" width="820" alt="原理图">
 
-![PCB 布线](gallery/PCB.png)
+<img src="gallery/PCB.png" width="820" alt="PCB 布线">
 
 ## 项目简介
 
@@ -65,11 +65,11 @@ S1_Lithium_Battery_Charger/
 ├── LICENSE                       # 许可证全文（CERN-OHL-P v2）
 ├── hardware/
 │   ├── lceda/                    # 立创EDA专业版工程包（可导入编辑）
-│   │   └── S1_Lithium_Charger_LCEDA_Pro.zip
+│   │   └── S1_Battery_Charger_LCEDA_Pro.zip
 │   └── manufacturing/            # 制造文件
 │       ├── gerbers/Gerber.zip    # Gerber + 钻孔（打包，可直接下单）
 │       └── bom/BOM.csv           # 物料清单
-├── docs/                         # 详细文档（预留）
+├── docs/                         # 原理图 PDF
 ├── gallery/                      # 原理图、PCB 与 3D 渲染图
 └── mechanical/                   # 机械结构（本板无，预留）
 ```
@@ -83,9 +83,11 @@ S1_Lithium_Battery_Charger/
 
 ## 源文件说明
 
-原理图与 PCB 使用立创EDA专业版 V4.1.60 绘制，源工程已随仓库发布：[S1_Lithium_Charger_LCEDA_Pro.zip](hardware/lceda/S1_Lithium_Charger_LCEDA_Pro.zip)。
+原理图与 PCB 使用立创EDA专业版 V4.1.60 绘制，源工程已随仓库发布：[S1_Battery_Charger_LCEDA_Pro.zip](hardware/lceda/S1_Battery_Charger_LCEDA_Pro.zip)。
 
 导入步骤：打开立创EDA专业版 → `文件 → 导入 → 工程压缩包`，选择该 zip，即可得到含原理图、PCB 与封面图的完整工程（包内为 `project2.json`、`S1锂电池充电板.epru` 与 `IMAGE/`）。
+
+另外提供原理图 PDF：[SCH_S1锂电池充电板原理图.pdf](docs/SCH_S1锂电池充电板原理图.pdf)，无需安装 EDA 即可审阅。
 
 导入后可直接编辑。若改动了设计，请同步重新导出 `hardware/manufacturing/` 下的 Gerber 与 BOM，并更新版本号。
 
