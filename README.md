@@ -64,7 +64,8 @@ S1_Lithium_Battery_Charger/
 ├── README.md
 ├── LICENSE                       # 许可证全文（CERN-OHL-P v2）
 ├── hardware/
-│   ├── lceda/                    # 立创EDA工程源文件（待补充，见下文）
+│   ├── lceda/                    # 立创EDA专业版工程包（可导入编辑）
+│   │   └── S1_Lithium_Charger_LCEDA_Pro.zip
 │   └── manufacturing/            # 制造文件
 │       ├── gerbers/Gerber.zip    # Gerber + 钻孔（打包，可直接下单）
 │       └── bom/BOM.csv           # 物料清单
@@ -82,10 +83,11 @@ S1_Lithium_Battery_Charger/
 
 ## 源文件说明
 
-原理图与 PCB 使用立创EDA专业版绘制。当前仓库只发布 Gerber 与 BOM，源工程待导出后放入 `hardware/lceda/`：
+原理图与 PCB 使用立创EDA专业版 V4.1.60 绘制，源工程已随仓库发布：[S1_Lithium_Charger_LCEDA_Pro.zip](hardware/lceda/S1_Lithium_Charger_LCEDA_Pro.zip)。
 
-- 立创EDA专业版：导出工程包（`.epro`）或提供在线工程链接，放入 / 写入 README 链接
-- 补充前，复现者可按 `hardware/manufacturing/` 中的文件直接生产
+导入步骤：打开立创EDA专业版 → `文件 → 导入 → 工程压缩包`，选择该 zip，即可得到含原理图、PCB 与封面图的完整工程（包内为 `project2.json`、`S1锂电池充电板.epru` 与 `IMAGE/`）。
+
+导入后可直接编辑。若改动了设计，请同步重新导出 `hardware/manufacturing/` 下的 Gerber 与 BOM，并更新版本号。
 
 ## 版本
 
