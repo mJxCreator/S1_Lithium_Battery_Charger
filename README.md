@@ -4,7 +4,7 @@
 
 ![License](https://img.shields.io/badge/License-CERN--OHL--P%20v2-blue.svg)
 
-<img src="gallery/PCB_3D_1.png" width="320" alt="PCB 3D 渲染">
+<img src="gallery/PCB_3D_1.png" width="320" alt="PCB 3D 渲染"> <img src="gallery/PCB_3D_2.png" width="320" alt="PCB 3D 渲染">
 
 <img src="gallery/schematic_P1.png" width="820" alt="原理图">
 
@@ -25,41 +25,41 @@
 
 ## 关键规格
 
-| 项目 | 说明 |
-| --- | --- |
-| 输入 | USB Type-C 6Pin，5V，仅供电 |
-| 充电 IC | TP4066，ESOP-8，线性充电 |
-| 电池 | 单节 4.2V 锂电池 |
-| 电池接口 | PH2.0-2P 卧贴座（H1）、2.54 mm 2P 排针（U3） |
-| 输入保护 | SMAJ6.5CA 双向 TVS（D1） |
-| 板层 / 尺寸 | 2 层 / 50 × 20 mm |
-| 设计工具 | 立创EDA专业版 V4.1.60 |
+| 项目        | 说明                                         |
+| ----------- | -------------------------------------------- |
+| 输入        | USB Type-C 6Pin，5V，仅供电                  |
+| 充电 IC     | TP4066，ESOP-8，线性充电                     |
+| 电池        | 单节 4.2V 锂电池                             |
+| 电池接口    | PH2.0-2P 卧贴座（H1）、2.54 mm 2P 排针（U3） |
+| 输入保护    | SMAJ6.5CA 双向 TVS（D1）                     |
+| 板层 / 尺寸 | 2 层 / 50 × 20 mm                            |
+| 设计工具    | 立创EDA专业版 V4.1.60                        |
 
 ## BOM 摘要
 
-| 位号 | 器件 | 封装 | 数量 |
-| --- | --- | --- | --- |
-| U1 | Type-C 6Pin 母座（首韩） | USB-SMD_TYPE-C-6PIN | 1 |
-| U2 | TP4066（华轩阳） | ESOP-8 | 1 |
-| D1 | SMAJ6.5CA（宏嘉诚） | SMA | 1 |
-| H1 | WAFER-PH2.0-2PWB（讯普） | SMD 卧贴 | 1 |
-| U3 | LAIL-PM2.54-2P-L（莱联） | HDR-TH_2P-P2.54-V-F | 1 |
-| R1, R2 | 5.1 kΩ | R0402 | 2 |
-| R3 | 1 kΩ | R0402 | 1 |
-| R4 | 4.3 kΩ | R0402 | 1 |
-| R5 | 10 kΩ | R0402 | 1 |
-| R6, R7 | 680 Ω | R0402 | 2 |
-| C1, C3, C5 | 10 µF | C0805 | 3 |
-| C2 | 100 nF | C0805 | 1 |
-| C4, C6 | 1 µF | C0805 | 2 |
-| LED1 | 绿色 LED | LED_0603 | 1 |
-| LED2, LED3 | 蓝色 LED | LED_0603 | 2 |
+| 位号       | 器件                     | 封装                | 数量 |
+| ---------- | ------------------------ | ------------------- | ---- |
+| U1         | Type-C 6Pin 母座（首韩） | USB-SMD_TYPE-C-6PIN | 1    |
+| U2         | TP4066（华轩阳）         | ESOP-8              | 1    |
+| D1         | SMAJ6.5CA（宏嘉诚）      | SMA                 | 1    |
+| H1         | WAFER-PH2.0-2PWB（讯普） | SMD 卧贴            | 1    |
+| U3         | LAIL-PM2.54-2P-L（莱联） | HDR-TH_2P-P2.54-V-F | 1    |
+| R1, R2     | 5.1 kΩ                   | R0402               | 2    |
+| R3         | 1 kΩ                     | R0402               | 1    |
+| R4         | 4.3 kΩ                   | R0402               | 1    |
+| R5         | 10 kΩ                    | R0402               | 1    |
+| R6, R7     | 680 Ω                    | R0402               | 2    |
+| C1, C3, C5 | 10 µF                    | C0805               | 3    |
+| C2         | 100 nF                   | C0805               | 1    |
+| C4, C6     | 1 µF                     | C0805               | 2    |
+| LED1       | 绿色 LED                 | LED_0603            | 1    |
+| LED2, LED3 | 蓝色 LED                 | LED_0603            | 2    |
 
 完整 BOM（含立创商城编号、制造商信息）见 [BOM.csv](hardware/manufacturing/bom/BOM.csv)。阻容与 LED 未填供应商编号，可按上表规格与封装自行选型。
 
 ## 目录结构
 
-```
+```txt
 S1_Lithium_Battery_Charger/
 ├── README.md
 ├── LICENSE                       # 许可证全文（CERN-OHL-P v2）
@@ -93,8 +93,8 @@ S1_Lithium_Battery_Charger/
 
 ## 版本
 
-| 版本 | 日期 | 说明 |
-| --- | --- | --- |
+| 版本 | 日期       | 说明                                        |
+| ---- | ---------- | ------------------------------------------- |
 | V1.0 | 2026-10-31 | 首版原理图与 PCB，Gerber 于 2026-11-01 导出 |
 
 首版设计尚未完成实物验证，打样后请自行核对充电电流与温升。
@@ -103,6 +103,6 @@ S1_Lithium_Battery_Charger/
 
 本项目采用 **CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P v2)**：允许自由使用、修改、制造与再分发，包括用于闭源商业产品，只需保留版权声明。完整条款见 [LICENSE](LICENSE)。
 
-```
+```txt
 Copyright (c) 2026 毛竣贤
 ```
